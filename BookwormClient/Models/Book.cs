@@ -27,7 +27,6 @@ namespace BookwormClient.Models
     //   return average;
     // }
 
-//     int[,] multiDimensionalArray2 = { { 1, 2, 3 }, { 4, 5, 6 } };
 
 //     rating [[4], [3.5]]
 //     first index: single rating, second index: average
