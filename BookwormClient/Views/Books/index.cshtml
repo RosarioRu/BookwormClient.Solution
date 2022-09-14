@@ -1,0 +1,32 @@
+@using BookwormClient.Models; 
+@{
+    Layout = "_Layout"; 
+}
+
+<div class="container">
+  <h1>Books for kids!</h1>
+
+  <h3>Search a book genre</h3>
+  @using (Html.BeginForm())
+  {
+    @Html.Label("Select a genre")
+    @Html.DropDownList("Genre")
+
+    <input type="submit" value="Save" class="btn">
+  }
+
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="~/img/StephenKingPetSematary.jpg" class="d-block w-100" alt="Pet-sematary">
+      </div>
+      <div class="carousel-item">
+        <img src="~/img/goodnight-moon.jpg" class="d-block w-100" alt="goodnight-moon">
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="~/img/giving-tree.jpg" class="d-block w-100" alt="giving-tree">
+    </div>
+  </div>
+</div>
+

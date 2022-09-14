@@ -1,0 +1,23 @@
+@using BookwormClient.Models; 
+@{
+    Layout = "_Layout"; 
+    ViewData["Title"] = "Details";
+}
+<h1>Book Info:</h1>
+<ul>
+    <li>ID: @Model.BookId</li>
+    <li>Title: @Model.Title</li>
+    <li>Author: @Model.Author</li>
+    <li>Age Range: @Model.AgeRange</li>
+    <li>Rating: @Model.Rating</li> 
+    <li>Genre: @Model.Genre</li> 
+    <li>Tags: @Model.Tags</li> 
+    <li>Reviews: @Model.Reviews</li> 
+</ul>
+<br>
+
+<a href="/Books/Edit/@(Model.BooksId)"><p>Edit</p></a>
+
+<a href="Books"><p>Return</p></a>
+
+<a href="/Books/Delete/@(Model.AnimalId)"><p>Delete Book</p></a>

@@ -1,0 +1,22 @@
+<h1>Edit Book Selection:</h1>
+<form action="/Books/Details/@(Model.BookId)" method="post">
+<label for="name">Book Title</label>
+<input id="title" name="title" type="text" value="@Model.Title)">
+<label for="summary">Book Summary </label>
+<input id="summary" name="summary" type="text" value="@(Model.Summary)">
+<label for="author">Book Author </label>
+<input id="author" name="author" type="text" value="@(Model.Author)">
+<label for="genre">Book Genre</label>
+<input id="genre" name="genre" type="text" value="@(Model.Genre)">
+<label for="tags">Book Tags</label>
+<input id="tags" name="tags" type="text" value="@(Model.Tags)">
+<label for="reviews">Review Selection</label>
+<input id="reviews" name="reviews" type="text" value="@(Model.Reviews)">
+<label for="AgeRange">Reader Age Range</label>
+<input id="AgeRange" name="AgeRange" type="number" value="@(Model.AgeRange)">
+<label for="rating">User rating</label>
+<input id="rating" name="rating" type="text" value="@(Model.Rating)">
+
+<button type="submit">Go!</button>
+</form>
+<a href="/Books/Details/@Model.BookId)"><p>Return to Details</p></a>
