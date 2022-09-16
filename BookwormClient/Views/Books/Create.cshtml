@@ -1,4 +1,26 @@
-@using BookwormClient.Models; 
 @{
-    Layout = "_Layout"; 
+  Layout = "_Layout";
 }
+
+@model BookwormClient.Models.Book
+
+<div class="content">
+  <h2>Add a New Book</h2>
+
+  @using(Html.BeginForm())
+  {
+    @Html.LabelFor(model => model.Title)
+    @Html.TextBoxFor(model => model.Title, new { @class="form-control", required="required" })<br>
+
+    @Html.LabelFor(model => model.Author)
+    @Html.TextBoxFor(model => model.Author, new { @class="form-control", required="required" })<br>
+
+    <label for="type">Type of Book</label>
+    <select name="type">
+      <option value="genre">Book Genre</option>
+      <option value="tags">Book Tags</option>
+    </select><br>
+
+    <input class="btn btn-dark" type="submit" value="Add New Book" />
+  }
+</div>
