@@ -1,10 +1,14 @@
-@using BookwormClient.Models; 
 @{
+<<<<<<< HEAD
     Layout = "_Layout"; 
+=======
+  Layout = "_Layout";
+>>>>>>> a386147d402209de782c47775d94dc599db81891
 }
 
 @model BookwormClient.Models.Book
 
+<<<<<<< HEAD
 <div class="container text-center">
     <h2>Add a new book</h2>
 
@@ -24,4 +28,25 @@
             @Html.TextBoxFor(model => model.Summary)
         </div>
     }
+=======
+<div class="content">
+  <h2>Add a New Book</h2>
+
+  @using(Html.BeginForm())
+  {
+    @Html.LabelFor(model => model.Title)
+    @Html.TextBoxFor(model => model.Title, new { @class="form-control", required="required" })<br>
+
+    @Html.LabelFor(model => model.Author)
+    @Html.TextBoxFor(model => model.Author, new { @class="form-control", required="required" })<br>
+
+    <label for="type">Type of Book</label>
+    <select name="type">
+      <option value="genre">Book Genre</option>
+      <option value="tags">Book Tags</option>
+    </select><br>
+
+    <input class="btn btn-dark" type="submit" value="Add New Book" />
+  }
+>>>>>>> a386147d402209de782c47775d94dc599db81891
 </div>

@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BookwormClient.Models
 {
+<<<<<<< HEAD
   public class BookwormClientContext : IdentityDbContext<ApplicationUser>
   {
     public DbSet<Book> Books { get; set; }
@@ -16,4 +17,10 @@ namespace BookwormClient.Models
       //optionsBuilder.UseLazyLoadingProxies();
     }
   }
+=======
+    public class BookwormClientContext : IdentityDbContext<ApplicationUser>
+    {
+      // Don't change code in here.
+    }
+>>>>>>> a386147d402209de782c47775d94dc599db81891
 }
