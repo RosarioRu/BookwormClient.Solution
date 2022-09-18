@@ -1,0 +1,26 @@
+@{
+  Layout = "_Layout";
+}
+
+@using BookworkClient.Models;
+@model IEnumerable<BookwormClient.Models.Library>
+
+<h1>Welcome, @User.Identity.Name to your library:</h1>
+
+@if (Model.Any())
+{
+  <ol>
+    @foreach (Library library in Model)
+      {
+        <li>@Html.ActionLink($"{library.Name}", "Details", new { id = library.LibraryId })</li>
+      }
+  </ol>
+} 
+else
+{
+  <h3>You have not added a library yet!</h3>
+}
+
+<button class="btn btn-dark">@Html.ActionLink("Add a New Library", "Create")</button>
+
+<button class="btn btn-dark">@Html.ActionLink("Home", "Index", "Home")</button>

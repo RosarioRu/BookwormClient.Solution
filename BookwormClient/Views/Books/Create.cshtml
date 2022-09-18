@@ -2,3 +2,26 @@
 @{
     Layout = "_Layout"; 
 }
+
+@model BookwormClient.Models.Book
+
+<div class="container text-center">
+    <h2>Add a new book</h2>
+
+    @using (Html.BeginForm())
+    {
+        <div class="filedset">
+            @Html.LabelFor(model => model.Title)
+            @Html.TextBoxFor(model => model.Title)
+
+            @Html.LabelFor(model => model.Author)
+            @Html.TextBoxFor(model => model.Author)
+
+            @Html.LabelFor(model => model.Genre)
+            @Html.TextBoxFor(model => model.Genre)
+
+            @Html.LabelFor(model => model.Summary)
+            @Html.TextBoxFor(model => model.Summary)
+        </div>
+    }
+</div>

@@ -1,0 +1,24 @@
+@{
+  Layout = "_Layout";
+}
+
+@model BookwormClient.Models.Library
+
+<h2>Edit Your Library Here</h2>
+
+<h4>Pick a book to add to your library: @Html.DisplayFor(model => model.Name)</h4>
+
+@using (Html.BeginForm())
+{
+  @Html.HiddenFor(model => model.LibraryId)
+
+  @Html.LabelFor(model => model.Name)
+  @Html.EditorFor(model => model.Name)
+
+  @Html.Label("Select Book")
+  @Html.DropDownList("BookId")
+
+  <input type="submit" value="Save" />
+}
+
+<p>@Html.ActionLink("Back to book list", "Index")</p>
