@@ -7,6 +7,10 @@ namespace BookwormClient.Models
 {
   public class Book
   {
+    public Book()
+    {
+      this.JoinEntities = new HashSet<BookLibrary>();
+    }
 
     public int BookId { get; set; }
     public string Title { get; set; }
@@ -17,6 +21,10 @@ namespace BookwormClient.Models
     public string Genre { get; set; }
     public string Tags { get; set; }
     public string Reviews { get; set; }
+
+   
+
+    public virtual ICollection<BookLibrary> JoinEntities { get; set; }
     
     //-------------------------------------------------------------------------
     // public int BookId { get; set; }

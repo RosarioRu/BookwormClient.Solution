@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+
 namespace BookwormClient.Models
 {
   public class BookLibrary
