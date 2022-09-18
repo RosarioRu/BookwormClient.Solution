@@ -7,38 +7,26 @@ namespace BookwormClient.Models
 {
   public class Book
   {
-    public Book()
-    {
-      this.JoinEntities = new HashSet<BookLibrary>();
-    }
-
     public int BookId { get; set; }
     public string Title { get; set; }
     public string Author { get; set; }
     public string AgeRange { get; set; }
     public string Summary { get; set; }
-    public string Rating { get; set; }
     public string Genre { get; set; }
     public string Tags { get; set; }
-    public string Reviews { get; set; }
 
-   
+    public Book()
+    {
+      this.Reviews = new HashSet<Review>();
+      this.Ratings = new HashSet<Rating>();
+      this.JoinEntities = new HashSet<BookLibrary>();
+    }
 
+    public virtual ICollection<Review> Reviews { get; set;}
+    public virtual ICollection<Rating> Ratings { get; set; }
     public virtual ICollection<BookLibrary> JoinEntities { get; set; }
-    
-    //-------------------------------------------------------------------------
-    // public int BookId { get; set; }
-    // public string Title { get; set; }
-    // public string Author { get; set; }
-    // public string Category { get; set; }
-    // public string Summary { get; set; }
-    // public string Genre { get; set; }
-    // public string Tags { get; set; }
-    // public string AgeRange { get; set; } //might be a way to use a numeric data type here
-    // public List<string> Reviews { get; set; }
 
-    // public int Rating { get; set; } //we need a list of all ratings + average of them - 2 dimensional array? Or a list with a seperate method for averaging list?
-    //---------------------------------------------------------------------------
+  
 
     public static List<Book> GetBooks()
     {
