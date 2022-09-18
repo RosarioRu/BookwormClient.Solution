@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using System;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+// using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+
 
 namespace BookwormClient.Models
 {
@@ -14,6 +16,8 @@ namespace BookwormClient.Models
     public string Summary { get; set; }
     public string Genre { get; set; }
     public string Tags { get; set; }
+    
+    public virtual ApplicationUser User { get; set; }
 
     public Book()
     {
