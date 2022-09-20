@@ -3,6 +3,19 @@
     Layout = "_Layout"; 
 }
 
+<h1>All Books</h1>
+<ol>
+@foreach (Book book in Model)
+{
+    <ul>
+        <li>ID: @book.BookId</li>
+        <li>Name: @book.Title</li> 
+    </ul>
+}
+
+
+
+
 <div class="container">
   <h1>Books for kids!</h1>
 

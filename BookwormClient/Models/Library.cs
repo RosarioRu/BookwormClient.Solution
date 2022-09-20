@@ -18,6 +18,6 @@ namespace BookwormClient.Models
     public string Name { get; set; }
     public virtual ICollection<BookLibrary> JoinEntities { get; set; }
     
-    public virtual ApplicationUser User { get; set; }
+    // public virtual ApplicationUser User { get; set; }
   }
 }
