@@ -17,7 +17,7 @@ namespace BookwormClient.Models
     public string Genre { get; set; }
     public string Tags { get; set; }
     
-    public virtual ApplicationUser User { get; set; }
+    // public virtual ApplicationUser User { get; set; }
 
     public Book()
     {
