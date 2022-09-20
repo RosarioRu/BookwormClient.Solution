@@ -7,7 +7,7 @@ namespace BookwormClient.Models
   {
     public static async Task<string> GetAll()
     {
-      RestClient client = new RestClient("http://localhost:5000/api/Books");
+      RestClient client = new RestClient("https://localhost:5001/api/Books");
       //https://localhost:5001/api/Books
   
       RestRequest request = new RestRequest($"books", Method.GET);
