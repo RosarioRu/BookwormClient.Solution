@@ -31,38 +31,22 @@ namespace BookwormClient.Models
 
     public Book()
     {
-      this.Reviews = new HashSet<Review>();
-      this.Ratings = new HashSet<Rating>();
       this.JoinEntities = new HashSet<BookLibrary>();
     }
 
-   
-
-    [JsonProperty("reviews")]
-    public virtual ICollection<Review> Reviews { get; set;}
-
-    [JsonProperty("ratings")]
-    public virtual ICollection<Rating> Ratings { get; set; }
     [JsonProperty("joinEntities")]
     public virtual ICollection<BookLibrary> JoinEntities { get; set; }
-
-    
-
 
     public static List<Book> GetBooks()
     {
       var apiCallTask = ApiHelper.GetAll();
       var result = apiCallTask.Result;
       
-
-
       // JObject jsonResponse = (JObject)JsonConvert.DeserializeObject(result);
 
       //JArray jsonResponse = JsonConvert.DeserializeObject<JArray>(result);
 
-
       //List<Book> BookList = JsonConvert.DeserializeObject<List<Book>>(jsonResponse.ToString());
-
 
       JObject jsonResponse = JsonConvert.DeserializeObject<JObject>(result);
       List<Book> bookList = JsonConvert.DeserializeObject<List<Book>>(jsonResponse["results"].ToString());

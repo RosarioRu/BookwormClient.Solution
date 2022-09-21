@@ -12,7 +12,6 @@ using System;
 
 namespace BookwormClient.Controllers
 {
-  // [Authorize]
   public class BooksController : Controller
   {
 
@@ -22,11 +21,7 @@ namespace BookwormClient.Controllers
       return View(allBooks);
     }
     
-    // public BooksController(UserManager<ApplicationUser> userManager, ApiHelper db)
-    // {
-    //   _userManager = userManager; 
-    //   _db = db; 
-    // }
+    
 
     // public async Task<ActionResult> Index()
     // {

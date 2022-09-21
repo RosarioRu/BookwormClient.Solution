@@ -14,13 +14,7 @@ namespace BookwormClient.Controllers
   public class LibrarysController : Controller
   {
 //     private readonly BookwormClientContext _db;
-//     private readonly UserManager<ApplicationUser> _userManager;
 
-//     public LibrarysController(UserManager<ApplicationUser> userManager, BookwormClientContext db)
-//     {
-//       _userManager = userManager;
-//       _db = db;
-//     }
 
     // public IActionResult Index()
     // {
@@ -36,7 +30,7 @@ namespace BookwormClient.Controllers
   }
 }
 
-//     [Authorize]
+
 //     public ActionResult Create()
 //     {
 //       return View();
@@ -59,7 +53,7 @@ namespace BookwormClient.Controllers
 //         return View(thisLibrary);
 //     }
 
-//     [Authorize]
+
 //     public ActionResult Edit(int id)
 //     {
 //       var thisLibrary = _db.Librarys.FirstOrDefault(library => library.LibraryId == id);
@@ -97,7 +91,7 @@ namespace BookwormClient.Controllers
 //       return RedirectToAction("Index");
 //     }
 
-//     [Authorize]
+
 //     public ActionResult Delete(int id)
 //     {
 //       var thisLibrary = _db.Librarys.FirstOrDefault(library => library.LibraryId == id);
