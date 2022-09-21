@@ -4,61 +4,77 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <h2 clas= "display-3">Take a Look at Users Favorite Selections!</h2>
-    <br>
-    <div class="row">
-        <div class="col-md-4" style="margin:auto;">   
-            <div id="carouselExampleControls" class="carousel slide carousel-fade text-center" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="~/img/StephenKingPetSematary.jpg" class="d-block w-100"   alt="Pet-sematary">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="~/img/goodnight-moon.jpg" class="d-block w-100"  alt="goodnight-moon">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="~/img/giving-tree.jpg" class="d-block w-100"  alt="giving-tree">
-                    </div>
+    <div id="header_wrapper">
+        <div id="header" class="parent">
+            <h1 class="display-4" style="color: goldenrod;">BookWorm</h1>
+            <div class="child"></div>
+        </div>
+    </div>
+    <div id="menu_wrapper">
+                <div id="menu">
+                    <ul class="navigation">
+                        <li><a href="#home" class="selected">Home<span class="ui_icon home"></span></a></li>
+                        <li><a href="#aboutus">Ratings<span class="ui_icon aboutus"></span></a></li>
+                        <li><a href="#services">Books<span class="ui_icon services"></span></a></li>
+                        <li><a href="#gallery">Reviews<span class="ui_icon gallery"></span></a></li>
+                        <li><a href="#contactus">Account<span class="ui_icon contactus"></span></a></li>
+                    </ul>        
                 </div>
             </div>
-        </div> 
-    </div>
-    <br>
-    <h2 clas= "display-3">Banned books are the best!</h2>
-    <br>
-    <div class="row">
-        <div class="col-md-4" style="margin:auto;">   
-            <div id="carouselExampleControls" class="carousel slide carousel-fade text-center" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="~/img/all-boys.jpg" class="d-block w-100"   alt="all-boys">
+    <div id="content_wrapper">
+        <div id="content">
+            <h2 clas= "display-3" style="color: goldenrod;">Take a Look at Users Favorite Selections!</h2>
+            <div class="row">
+                <div class="col-md-4" style="margin:auto;">   
+                    <div id="carouselExampleControls" class="carousel slide carousel-fade text-center" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="~/img/StephenKingPetSematary.jpg" class="d-block w-100"   alt="Pet-sematary">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="~/img/goodnight-moon.jpg" class="d-block w-100"  alt="goodnight-moon">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="~/img/giving-tree.jpg" class="d-block w-100"  alt="giving-tree">
+                            </div>
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="~/img/my-hair.jpg" class="d-block w-100"  alt="my-hair">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="~/img/nino.jpg" class="d-block w-100"  alt="nino-wrestles">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="~/img/out-of-darkness.jpg" class="d-block w-100"  alt="out-of-darkness">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="~/img/anne.jpg" class="d-block w-100"  alt="anne">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="~/img/proudest-blue.jpg" class="d-block w-100"  alt="proudest-blue">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="~/img/maus.jpg" class="d-block w-100"  alt="maus">
-                    </div>
-                </div>
+                </div> 
             </div>
-        </div> 
+            <br>
+            <h2 clas= "display-3">Banned books are the best!</h2>
+            <br>
+            <div class="row">
+                <div class="col-md-4" style="margin:auto;">   
+                    <div id="carouselExampleControls" class="carousel slide carousel-fade text-center" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="~/img/all-boys.jpg" class="d-block w-100"   alt="all-boys">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="~/img/my-hair.jpg" class="d-block w-100"  alt="my-hair">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="~/img/nino.jpg" class="d-block w-100"  alt="nino-wrestles">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="~/img/out-of-darkness.jpg" class="d-block w-100"  alt="out-of-darkness">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="~/img/anne.jpg" class="d-block w-100"  alt="anne">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="~/img/proudest-blue.jpg" class="d-block w-100"  alt="proudest-blue">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="~/img/maus.jpg" class="d-block w-100"  alt="maus">
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        <button>@Html.ActionLink("See Book List", "Index", "Books")</button>
+        <button>@Html.ActionLink("Create New Book List", "Create", "Books")</button>
+        </div>
     </div>
-<button>@Html.ActionLink("Login", "Index", "Account")</button>
-<button>@Html.ActionLink("Create An Account", "Index", "Account")</button>
-<button>@Html.ActionLink("See Book List", "Index", "Books")</button>
-<button>@Html.ActionLink("Create New Book List", "Create", "Books")</button>
-
 </div>
