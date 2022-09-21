@@ -181,9 +181,9 @@ ul.navigation a:focus {
     background-size: 120px 120px;
     height: 120px;
     width: 120px;
-    left: 300px;
+    left: 500px;
     top: -30px;
-  animation: left-to-right 5s ease-in-out forwards 5s;
+  animation: left-to-right 7s ease-in-out forwards 5s;
 
 }
 
@@ -193,97 +193,187 @@ ul.navigation a:focus {
     background-size: 120px 120px;
     height: 120px;
     width: 120px;
-    left: 300px;
+    left: 500px;
     top: -30px;
     transform: translateX(0%);
   }
-  10% {
+  5% {
     background: url(/img/worm/sitRTAFturn.png);
     background-size: 120px 120px;
     height: 120px;
     width: 120px;
-    left: 302px;
+    left: 502px;
+    top: -30px;
+    transform: translateX(5%);
+  }
+  10% {
+    background: url(/img/worm/bendRTAFmove.png);
+    background-size: 120px 120px;
+    height: 120px;
+    width: 120px;
+    left: 505px;
     top: -30px;
     transform: translateX(10%);
+  }
+  15% {
+    background: url(/img/worm/flatRTAFmove.png);
+    background-size: 120px 120px;
+    height: 120px;
+    width: 120px;
+    left: 508px;
+    top: -30px;
+    transform: translateX(15%);
   }
   20% {
     background: url(/img/worm/bendRTAFmove.png);
     background-size: 120px 120px;
     height: 120px;
     width: 120px;
-    left: 305px;
+    left: 511px;
     top: -30px;
     transform: translateX(20%);
   }
-  30% {
-    background: url(/img/worm/flatRTAFmove.png);
-    background-size: 120px 120px;
-    height: 120px;
-    width: 120px;
-    left: 308px;
-    top: -30px;
-    transform: translateX(30%);
-  }
-  40% {
-    background: url(/img/worm/bendRTAFmove.png);
-    background-size: 120px 120px;
-    height: 120px;
-    width: 120px;
-    left: 311px;
-    top: -30px;
-    transform: translateX(40%);
-  }
-  50% {
+  25% {
     background: url(/img/worm/archRTAFmove.png);
     background-size: 120px 120px;
     height: 120px;
     width: 120px;
-    left: 315px;
+    left: 515px;
     top: -30px;
-    transform: translateX(50%);
+    transform: translateX(25%);
   }
-  60% {
+  30% {
     background: url(/img/worm/bendRTAFmove.png);
     background-size: 120px 120px;
     height: 120px;
     width: 120px;
-    left: 318px;
+    left: 518px;
     top: -30px;
-    transform: translateX(60%);
+    transform: translateX(30%);
   }
-  70% {
+  35% {
     background: url(/img/worm/flatRTAFmove.png);
     background-size: 120px 120px;
     height: 120px;
     width: 120px;
-    left: 321px;
+    left: 521px;
     top: -30px;
-    transform: translateX(70%);
+    transform: translateX(35%);
   }
-  80% {
+  40% {
     background: url(/img/worm/flatRTAFstop.png);
     background-size: 120px 120px;
     height: 120px;
     width: 120px;
-    left: 323px;
+    left: 523px;
     top: -30px;
-    transform: translateX(80%);
+    transform: translateX(40%);
   }
-  90% {
+  45% {
     background: url(/img/worm/flatRTAFlaugh.png);
     background-size: 120px 120px;
     height: 120px;
     width: 120px;
-    left: 324px;
+    left: 523px;
+    top: -30px;
+    transform: translateX(45%);
+  }
+  50% {
+    background: url(/img/worm/flatRTAFstop.png);
+    background-size: 120px 120px;
+    height: 120px;
+    width: 120px;
+    left: 523px;
+    top: -30px;
+    transform: translateX(50%);
+  }
+  55% {
+    background: url(/img/worm/flatRTAFlaugh.png);
+    background-size: 120px 120px;
+    height: 120px;
+    width: 120px;
+    left: 523px;
+    top: -30px;
+    transform: translateX(55%);
+  } 
+  60% {
+    background: url(/img/worm/flatRTAFmove.png);
+    background-size: 120px 120px;
+    height: 120px;
+    width: 120px;
+    left: 523px;
+    top: -30px;
+    transform: translateX(60%);
+  }
+  65% {
+    background: url(/img/worm/bendRTAFmove.png);
+    background-size: 120px 120px;
+    height: 120px;
+    width: 120px;
+    left: 525px;
+    top: -30px;
+    transform: translateX(65%);
+  }
+  70% {
+    background: url(/img/worm/archRTAFmove.png);
+    background-size: 120px 120px;
+    height: 120px;
+    width: 120px;
+    left: 528px;
+    top: -30px;
+    transform: translateX(70%);
+  }
+  75% {
+    background: url(/img/worm/bendRTAFmove.png);
+    background-size: 120px 120px;
+    height: 120px;
+    width: 120px;
+    left: 531px;
+    top: -30px;
+    transform: translateX(75%);
+  }
+  80% {
+    background: url(/img/worm/flatRTAFmove.png);
+    background-size: 120px 120px;
+    height: 120px;
+    width: 120px;
+    left: 534px;
+    top: -30px;
+    transform: translateX(80%);
+  }
+  85% {
+    background: url(/img/worm/bendRTAFmove.png);
+    background-size: 120px 120px;
+    height: 120px;
+    width: 120px;
+    left: 534px;
+    top: -30px;
+    transform: translateX(85%);
+  }
+  90% {
+    background: url(/img/worm/sitRTAFturn.png);
+    background-size: 120px 120px;
+    height: 120px;
+    width: 120px;
+    left: 534px;
     top: -30px;
     transform: translateX(90%);
+  }
+  95% {
+    background: url(/img/worm/sitRTAFsmile.png);
+    background-size: 120px 120px;
+    height: 120px;
+    width: 120px;
+    left: 530px;
+    top: -30px;
+    transform: translateX(95%);
   }
   100% {
     background: url(/img/worm/sitRTAFsmile.png);
     background-size: 120px 120px;
     height: 120px;
     width: 120px;
-    left: 324px;
+    left: 528px;
     top: -30px;
     transform: translateX(100%);
   }
