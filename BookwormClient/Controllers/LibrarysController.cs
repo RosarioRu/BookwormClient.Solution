@@ -1,18 +1,18 @@
-// using Microsoft.AspNetCore.Mvc.Rendering;
-// using Microsoft.EntityFrameworkCore;
-// using Microsoft.AspNetCore.Mvc;
-// using BookwormClient.Models;
-// using System.Collections.Generic;
-// using System.Linq;
-// using Microsoft.AspNetCore.Authorization;
-// using Microsoft.AspNetCore.Identity;
-// using System.Threading.Tasks;
-// using System.Security.Claims;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
+using BookwormClient.Models;
+using System.Collections.Generic;
+using System.Linq;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using System.Threading.Tasks;
+using System.Security.Claims;
 
-// namespace BookwormClient.Controllers
-// {
-//   public class LibrarysController : Controller
-//   {
+namespace BookwormClient.Controllers
+{
+  public class LibrarysController : Controller
+  {
 //     private readonly BookwormClientContext _db;
 //     private readonly UserManager<ApplicationUser> _userManager;
 
@@ -22,23 +22,33 @@
 //       _db = db;
 //     }
 
-//     public ActionResult Index()
-//     {
-//       return View(_db.Librarys.ToList());
-//     }
+    // public IActionResult Index()
+    // {
+    //   return View(_db.Librarys.ToList());
+    // }
+
+    public IActionResult Index()
+    {
+      var allLibrarys = Library.GetLibrarys();
+      return View(allLibrarys);
+    }
+
+  }
+}
 
 //     [Authorize]
 //     public ActionResult Create()
 //     {
 //       return View();
 //     }
-//     [HttpPost]
-//     public ActionResult Create(Library library)
-//     {
-//       _db.Librarys.Add(library);
-//       _db.SaveChanges();
-//       return RedirectToAction("Index");
-//     }
+
+    // [HttpPost]
+    // public IActionResult Create(Library library)
+    // {
+    //   _db.Librarys.Add(library);
+    //   _db.SaveChanges();
+    //   return RedirectToAction("Index");
+    // }
   
 //     public ActionResult Details(int id)
 //     {
