@@ -128,10 +128,14 @@ button.accept-policy {
 
 .child {
   background: url(/img/worm/sitRTAFsmile.png);
+  border: none;
+  position: relative;
     background-size: 120px 120px;
     height: 120px;
     width: 120px;
-  animation: left-to-right 5s ease-in-out forwards 10s;
+    left: 300px;
+    top: -30px;
+  animation: left-to-right 5s ease-in-out forwards 5s;
 
 }
 
@@ -141,6 +145,8 @@ button.accept-policy {
     background-size: 120px 120px;
     height: 120px;
     width: 120px;
+    left: 300px;
+    top: -30px;
     transform: translateX(0%);
   }
   10% {
@@ -148,6 +154,8 @@ button.accept-policy {
     background-size: 120px 120px;
     height: 120px;
     width: 120px;
+    left: 302px;
+    top: -30px;
     transform: translateX(10%);
   }
   20% {
@@ -155,6 +163,8 @@ button.accept-policy {
     background-size: 120px 120px;
     height: 120px;
     width: 120px;
+    left: 305px;
+    top: -30px;
     transform: translateX(20%);
   }
   30% {
@@ -162,6 +172,8 @@ button.accept-policy {
     background-size: 120px 120px;
     height: 120px;
     width: 120px;
+    left: 308px;
+    top: -30px;
     transform: translateX(30%);
   }
   40% {
@@ -169,6 +181,8 @@ button.accept-policy {
     background-size: 120px 120px;
     height: 120px;
     width: 120px;
+    left: 311px;
+    top: -30px;
     transform: translateX(40%);
   }
   50% {
@@ -176,6 +190,8 @@ button.accept-policy {
     background-size: 120px 120px;
     height: 120px;
     width: 120px;
+    left: 315px;
+    top: -30px;
     transform: translateX(50%);
   }
   60% {
@@ -183,6 +199,8 @@ button.accept-policy {
     background-size: 120px 120px;
     height: 120px;
     width: 120px;
+    left: 318px;
+    top: -30px;
     transform: translateX(60%);
   }
   70% {
@@ -190,6 +208,8 @@ button.accept-policy {
     background-size: 120px 120px;
     height: 120px;
     width: 120px;
+    left: 321px;
+    top: -30px;
     transform: translateX(70%);
   }
   80% {
@@ -197,6 +217,8 @@ button.accept-policy {
     background-size: 120px 120px;
     height: 120px;
     width: 120px;
+    left: 323px;
+    top: -30px;
     transform: translateX(80%);
   }
   90% {
@@ -204,6 +226,8 @@ button.accept-policy {
     background-size: 120px 120px;
     height: 120px;
     width: 120px;
+    left: 324px;
+    top: -30px;
     transform: translateX(90%);
   }
   100% {
@@ -211,6 +235,8 @@ button.accept-policy {
     background-size: 120px 120px;
     height: 120px;
     width: 120px;
+    left: 324px;
+    top: -30px;
     transform: translateX(100%);
   }
 }
