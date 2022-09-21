@@ -97,6 +97,19 @@ button.accept-policy {
   margin: 0 auto
 }
 
+#content_wrapper2 {
+	width: 100%;
+	background: url(/img/theme/footer_texture.jpg) no-repeat top center;
+}
+
+#content2 {
+	background: url(/img/theme/footer_texture.jpg) no-repeat top center;
+	width: 980px;
+	height: 428px;
+	padding: 0 60px;
+	margin: 0 auto
+}
+
 #footer_wrapper { 
   width: 100%;
   background: url(/img/theme/footer_texture.jpg) no-repeat top center
@@ -114,6 +127,41 @@ button.accept-policy {
 
 #footer a {
   color: #fff;
+}
+
+ul.navigation {
+	width: 670px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul.navigation li {
+    display: inline;
+    margin: 0px;
+	padding: 0;
+}
+
+ul.navigation a {
+	float: left;
+	display: block;
+	width: 104px;
+	height: 70px;
+	padding: 34px 15px 0;
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: bold;
+    text-decoration: none;
+	text-align: center;
+	background: url(/img/theme/menu_sign.png) no-repeat top center
+}
+
+ul.navigation a:hover, ul.navigation a.selected {
+	color: #FFFF00;
+}
+
+ul.navigation a:focus {
+    outline: none;
 }
 
 /* worm animation 
