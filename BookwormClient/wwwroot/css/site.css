@@ -51,6 +51,170 @@ button.accept-policy {
   line-height: inherit;
 }
 
+
+#slider {
+  position: relative;
+  width: 100%;
+}
+
+#header_wrapper {
+  width: 100%;
+  background: url(/img/theme/top_shelf.jpg) no-repeat top center;
+}
+
+#header {
+  background: url(/img/theme/top_shelf.jpg) no-repeat top center;
+  width: 980px;
+  height: 180px;
+  margin: 0 auto;
+  padding-top: 35px;
+  text-align: center;
+}
+
+#menu_wrapper {
+  width: 100%;
+  background: url(/img/theme/shelf.jpg) no-repeat top center;
+}
+
+#menu {
+  background: url(/img/theme/shelf.jpg) no-repeat top center;
+  width: 980px;
+  height: 103px;
+  margin: 0 auto;
+  padding-top: 4px;
+}
+
+#content_wrapper {
+  width: 100%;
+  background: url(/img/theme/background_texture.jpg) no-repeat top center;
+}
+
+#content {
+  background: url(/img/theme/background_texture.jpg) no-repeat top center;
+  width: 980px;
+  height: 428px;
+  padding: 0 60px;
+  margin: 0 auto
+}
+
+#footer_wrapper { 
+  width: 100%;
+  background: url(/img/theme/footer_texture.jpg) no-repeat top center
+}
+
+#footer {
+  height: 92px;
+  width: 980px;
+  padding: 20px 0;
+  margin: 0 auto;
+  color: #999;
+  text-align: center;
+  background: url(/img/theme/footer_texture.jpg) no-repeat top center	
+}
+
+#footer a {
+  color: #fff;
+}
+
+/* worm animation 
+---------------------------------------------------*/
+.parent {
+  background-color: rgba(0, 0, 0, 0);
+  width: 980px;
+  height: 160px;
+  margin: 0 auto;
+  padding-top: 35px;
+}
+
+.child {
+  background: url(/img/worm/sitRTAFsmile.png);
+    background-size: 120px 120px;
+    height: 120px;
+    width: 120px;
+  animation: left-to-right 5s ease-in-out forwards 10s;
+
+}
+
+@keyframes left-to-right {
+  0% {
+    background: url(/img/worm/sitRTAFsmile.png);
+    background-size: 120px 120px;
+    height: 120px;
+    width: 120px;
+    transform: translateX(0%);
+  }
+  10% {
+    background: url(/img/worm/sitRTAFturn.png);
+    background-size: 120px 120px;
+    height: 120px;
+    width: 120px;
+    transform: translateX(10%);
+  }
+  20% {
+    background: url(/img/worm/bendRTAFmove.png);
+    background-size: 120px 120px;
+    height: 120px;
+    width: 120px;
+    transform: translateX(20%);
+  }
+  30% {
+    background: url(/img/worm/flatRTAFmove.png);
+    background-size: 120px 120px;
+    height: 120px;
+    width: 120px;
+    transform: translateX(30%);
+  }
+  40% {
+    background: url(/img/worm/bendRTAFmove.png);
+    background-size: 120px 120px;
+    height: 120px;
+    width: 120px;
+    transform: translateX(40%);
+  }
+  50% {
+    background: url(/img/worm/archRTAFmove.png);
+    background-size: 120px 120px;
+    height: 120px;
+    width: 120px;
+    transform: translateX(50%);
+  }
+  60% {
+    background: url(/img/worm/bendRTAFmove.png);
+    background-size: 120px 120px;
+    height: 120px;
+    width: 120px;
+    transform: translateX(60%);
+  }
+  70% {
+    background: url(/img/worm/flatRTAFmove.png);
+    background-size: 120px 120px;
+    height: 120px;
+    width: 120px;
+    transform: translateX(70%);
+  }
+  80% {
+    background: url(/img/worm/flatRTAFstop.png);
+    background-size: 120px 120px;
+    height: 120px;
+    width: 120px;
+    transform: translateX(80%);
+  }
+  90% {
+    background: url(/img/worm/flatRTAFlaugh.png);
+    background-size: 120px 120px;
+    height: 120px;
+    width: 120px;
+    transform: translateX(90%);
+  }
+  100% {
+    background: url(/img/worm/sitRTAFsmile.png);
+    background-size: 120px 120px;
+    height: 120px;
+    width: 120px;
+    transform: translateX(100%);
+  }
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
