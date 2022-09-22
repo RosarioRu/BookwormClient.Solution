@@ -99,11 +99,11 @@ button.accept-policy {
 
 #content_wrapper2 {
 	width: 100%;
-	background: url(/img/theme/footer_texture.jpg) no-repeat top center;
+	background: url(/img/theme/background_texture.jpg) no-repeat top center;
 }
 
 #content2 {
-	background: url(/img/theme/footer_texture.jpg) no-repeat top center;
+	background: url(/img/theme/background_texture.jpg) no-repeat top center;
 	width: 980px;
 	height: 428px;
 	padding: 0 60px;
